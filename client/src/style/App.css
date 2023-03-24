@@ -1,0 +1,371 @@
+.app {
+left: 0;
+right: 0;
+}
+
+.logo {
+  height: 15vmin;
+  display: block;
+}
+
+.main-logo {
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+  padding: 100px;
+}
+
+.logo-footer {
+  height: 75px;
+  display: block;
+}
+
+/* table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+tr:nth-child(odd) {
+  background-color: #ffffff;
+} */
+
+table {
+  border: 2px solid #A40808;
+  background-color: #FFFFFF;
+  width: 50%;
+  text-align: left;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td, th {
+  border: 1px solid #AAAAAA;
+  padding: 3px ;
+}
+tbody {
+  font-size: 13px;
+}
+tr:nth-child(even) {
+  background: #F5C8BF;
+}
+thead {
+  background: #A40808;
+}
+th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: left;
+  border-left: 2px solid #A40808;
+}
+th:first-child {
+  border-left: none;
+}
+
+tfoot {
+  font-size: 13px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #A40808;
+}
+table tfoot td {
+  font-size: 13px;
+}
+table tfoot .links {
+  text-align: right;
+}
+table tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #A40808;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.auth-form, .login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.auth-form {
+  padding: 2rem;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  display: block;
+  padding: 0.2rem 0;
+}
+
+input {
+  margin: 0.25rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.link-button {
+ background: none;
+ color: rgb(18, 69, 180);
+ text-decoration: underline;
+ border: none;
+}
+
+.navbar {
+  display: flex;
+  position: sticky;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 0px;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 10px 0px;
+}
+
+.nav-button {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:7px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.nav-button:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.nav-button:active {
+	position:relative;
+	top:1px;
+}
+.box-group {
+  background-color: #276873;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  border: #ffffff 1px;
+}
+
+.flex-container-navbar {
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: right;
+align-items: right;
+align-content: flex-start;
+}
+
+.flex-container {
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: flex-start;
+align-items: flex-start;
+align-content: flex-start;
+}
+
+.flex-child {
+  flex: 1 0 21%;;
+  border: 2px solid #276873;
+  background-color: rgba(255, 255, 255, 0.5);;
+  margin: 10px;
+}  
+
+
+.links {
+  float: left;
+  display: flex;
+  gap: 10px;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  
+}
+
+#main-wrapper {
+  padding: 0 0 650px;
+  position: relative;
+}
+
+footer {
+  bottom: 0;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(29, 29, 175, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+select {
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select.classic {
+  background-image:
+    linear-gradient(45deg, transparent 50%, blue 50%),
+    linear-gradient(135deg, blue 50%, transparent 50%),
+    linear-gradient(to right, skyblue, skyblue);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+select.classic:focus {
+  background-image:
+    linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    linear-gradient(to right, gray, gray);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+  border-color: grey;
+  outline: 0;
+}
+
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.red {
+  color: red;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.small-links {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:23px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:11px 60px;
+  margin: 10px;
+	text-decoration:none;
+}
+.small-links:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.small-links:active {
+	position:relative;
+	top:1px;
+}
+
+.acceptance-button {
+	box-shadow: 0px 10px 14px -7px rgb(29, 29, 175);
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+  float: center;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	font-weight:bold;
+	padding:11px 60px;
+  margin: 40px;
+	text-decoration:none;
+}
+.acceptance-button:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.acceptance-button:active {
+	position:relative;
+	top:1px;
+}
+
+.sorting {
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: center;
+  align-content: flex-start;
+  padding: 10px;
+}
